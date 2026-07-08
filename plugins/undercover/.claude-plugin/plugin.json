@@ -1,0 +1,10 @@
+{
+  "name": "undercover",
+  "version": "0.1.0",
+  "description": "Keep your git history clean in public repos: strips AI-assistant attribution from commits and PRs, and blocks configurable sensitive terms from leaking. Auto-activates everywhere except your trusted private remotes.",
+  "author": {
+    "name": "Teddy Tennant"
+  },
+  "homepage": "https://github.com/teddytennant/undercover",
+  "keywords": ["git", "privacy", "commits", "attribution", "hooks", "security"]
+}

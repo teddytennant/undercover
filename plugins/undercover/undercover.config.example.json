@@ -1,0 +1,16 @@
+{
+  "mode": "auto",
+  "stripAttribution": true,
+  "guardCommands": true,
+  "guardAction": "block",
+  "injectGuidance": true,
+  "privateRemotes": [
+    "github\\.com[:/]my-org/",
+    "gitlab\\.internal\\.example\\.com"
+  ],
+  "blocklist": [
+    "AcmeCorp",
+    "project[- ]?falcon",
+    "internal\\.example\\.com"
+  ]
+}

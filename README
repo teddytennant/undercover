@@ -1,0 +1,6 @@
+Undercover
+
+/plugin marketplace add teddytennant/undercover
+/plugin install undercover@undercover
+
+Restart Claude Code. /undercover shows whether it's on.

@@ -1,0 +1,15 @@
+# Undercover for Wizard. Append these to ~/.wizard/hooks.toml (global) or a
+# project's .wizard/hooks.toml, then run /reload. `wizard/install.sh` does this for
+# you and fills in the absolute path — __UNDERCOVER_DIR__ is the path to the
+# plugins/undercover directory.
+
+[[hooks]]
+event = "session_start"
+command = "node __UNDERCOVER_DIR__/wizard/inject-context.mjs"
+timeout_secs = 10
+
+[[hooks]]
+event = "pre_tool_use"
+matcher = "execute"
+command = "node __UNDERCOVER_DIR__/wizard/commit-guard.mjs"
+timeout_secs = 10

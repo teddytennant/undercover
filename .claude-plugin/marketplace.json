@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "undercover",
+  "version": "0.1.0",
+  "description": "Undercover — keep AI-assistant attribution and sensitive terms out of your public git history.",
+  "owner": {
+    "name": "Teddy Tennant"
+  },
+  "plugins": [
+    {
+      "name": "undercover",
+      "description": "Strips AI-assistant attribution from commits and PRs, and blocks configurable sensitive terms from leaking. Auto-activates everywhere except your trusted private remotes.",
+      "source": "./plugins/undercover",
+      "category": "security"
+    }
+  ]
+}
